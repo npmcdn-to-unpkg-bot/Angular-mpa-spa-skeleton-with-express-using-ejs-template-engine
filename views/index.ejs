@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+
+  <title><%= title%></title>
+  <base href="/">
+
+
+  <!-- Bootstrap-->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="myApp">
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Angular</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="about">About</a></li>
+  </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- here We inject our content -->
+  <div ui-view></div>
+
+</div>
+
+
+
+<!-- Angular js -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<!-- ui-Router js -->
+<script src="//npmcdn.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- controller js -->
+<script src="/javascripts/app.js"></script>
+
+</body>
+</html>
